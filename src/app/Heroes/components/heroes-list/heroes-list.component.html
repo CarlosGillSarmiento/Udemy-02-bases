@@ -1,0 +1,19 @@
+<p>heroes-list works!</p>
+
+<!-- <h3>Listado de Heroes sin NG for</h3>
+ <ul class="mt-2 list-group">
+    <li class="list-group-item">SpiderMan</li>
+    <li class="list-group-item">IronMan</li>
+</ul> -->
+
+<button *ngIf="heroesName.length>0" class="btn btn-outline-danger mx-2" (click)="removeLastHero()">Borrar ultimo Heroe</button>
+
+<span *ngIf="deleteHero; else noDeleted">Heroe Borrado: <small class="text-danger">{{deleteHero}}</small></span>
+<ng-template #noDeleted>
+    <span>No ha borrado nada</span>
+</ng-template>
+
+<!-- <h3>Listado de Heroes con NG for</h3> -->
+<ul class="mt-2 list-group">
+    <li *ngFor="let name of heroesName" class="list-group-item">{{name}}</li>
+</ul>

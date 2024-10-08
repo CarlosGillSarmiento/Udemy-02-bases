@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  eyelash: any = 'list';
+  title = '02-bases';
+
+  options(value:string) {
+    this.eyelash = value;
+  }
+
 }
