@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  eyelash: any = 'list';
+  eyelash: any = 'dbz';
   title = '02-bases';
 
   options(value:string) {

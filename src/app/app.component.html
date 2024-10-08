@@ -1,15 +1,16 @@
 <div>
-  V 1.0
+ <app-version></app-version>
 </div>
 
-<body>
+
 
   <label>Menú:</label>
   <div>
-    <button (click)="options('holaMundo')">Hola mundo</button>
-    <button (click)="options('counter')">Contador</button>
-    <button (click)="options('hero')">Heroes</button>
-    <button (click)="options('list')">Heroes List</button>
+    <button type="button" class="btn btn-dark mx-2" (click)="options('holaMundo')">Hola mundo</button>
+    <button type="button" class="btn btn-dark mx-2" (click)="options('counter')">Contador</button>
+    <button type="button" class="btn btn-dark mx-2" (click)="options('hero')">Heroes</button>
+    <button type="button" class="btn btn-dark mx-2" (click)="options('list')">Lista de Heroes</button>
+    <button type="button" class="btn btn-dark mx-2" (click)="options('dbz')">Modulo DBZ</button>
 
   </div>
   
@@ -27,4 +28,6 @@
   <div *ngIf="eyelash==='list'">
     <app-heroes-list></app-heroes-list>
   </div>
-</body>
+  <div *ngIf="eyelash==='dbz'">
+    <app-dbz-main-page></app-dbz-main-page>
+  </div>
