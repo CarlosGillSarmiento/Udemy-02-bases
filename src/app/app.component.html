@@ -2,16 +2,29 @@
  <app-version></app-version>
 </div>
 
-
-
-  <label>Menú:</label>
-  <div>
+  <!-- <label>Menú:</label> -->
+  <!-- <div>
     <button type="button" class="btn btn-dark mx-2" (click)="options('holaMundo')">Hola mundo</button>
     <button type="button" class="btn btn-dark mx-2" (click)="options('counter')">Contador</button>
     <button type="button" class="btn btn-dark mx-2" (click)="options('hero')">Heroes</button>
     <button type="button" class="btn btn-dark mx-2" (click)="options('list')">Lista de Heroes</button>
     <button type="button" class="btn btn-dark mx-2" (click)="options('dbz')">Modulo DBZ</button>
+  </div> -->
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked (click)="options('holaMundo')">
+    <label class="btn btn-outline-primary" for="btnradio1">Hola Mundo</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" (click)="options('counter')">
+    <label class="btn btn-outline-primary" for="btnradio2">Contador</label>
 
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" (click)="options('hero')">
+    <label class="btn btn-outline-primary" for="btnradio3">Heroes</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" (click)="options('list')">
+    <label class="btn btn-outline-primary" for="btnradio4">Lista de Heroes</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" (click)="options('dbz')">
+    <label class="btn btn-outline-primary" for="btnradio5">Modulo DBZ</label>
   </div>
   
   <div *ngIf="eyelash==='holaMundo'">

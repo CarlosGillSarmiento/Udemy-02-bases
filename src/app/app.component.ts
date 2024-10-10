@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   eyelash: any = 'dbz';
-  title = '02-bases';
+  title = 'Curso Udemy!';
 
   options(value:string) {
     this.eyelash = value;
