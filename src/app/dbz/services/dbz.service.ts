@@ -27,8 +27,10 @@ export class dbzService {
         this.characters.push(newCharacter);
     }
 
-    onDelete(index: number): void {
-        this.characters.splice(index, 1);
+    // onDelete(index: number): void {
+    //     this.characters.splice(index, 1);
+    // }
+    deleteCharacterById(id:string){
+        this.characters = this.characters.filter(character => character.id !== id)
     }
-
 }
